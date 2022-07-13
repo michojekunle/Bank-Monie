@@ -41,6 +41,10 @@ main {
     min-height: 80px;
 }
 
+.brand-logo img {
+    width: 150px;
+}
+
 .nav-links {
     display:flex;
     align-items: center;
@@ -55,9 +59,12 @@ main {
 .nav-links .nav-link a{
     text-decoration: none;
     color: var(--primary-dark-black-blue);
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
+.nav-links .nav-link.login a {
+    color: var(--primary-blue);
+} 
 
 
 .main-content {
