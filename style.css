@@ -28,6 +28,7 @@ html {
 main {
     background-color: rgba(229, 247, 255, 1);
     height: 100vh;
+    min-height: auto;
     width: 100vw;
     padding: 0 150px;
 }
@@ -39,6 +40,7 @@ main {
     width:100%;
     height: 12vh;
     min-height: 80px;
+    position: relative;
 }
 
 .brand-logo img {
@@ -169,4 +171,41 @@ main {
     right:-58px;
     width: 250px;
     z-index: 3;
+}
+
+.menu {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .main-content {
+        flex-direction:column;
+    }
+
+    .left {
+        text-align: center;
+        align-items: center;
+    }
+
+    .elipse {
+        display: none;
+    }
+
+    .right .right-image1 {
+        display: none;
+    }
+
+    main {
+        padding:0 30px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        display: flex;
+        right:0;
+    }
 }
