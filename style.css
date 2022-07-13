@@ -149,25 +149,24 @@ main {
 
 .right .left-image {
     top:60%;
-    left:-20px;
+    left:-40px;
     z-index: 3;
-    height: 100px;
+    height: 95px;
     width: 250px;
 }
 
 .right .right-image1 {
     top:20%;
-    right:-30px;
+    right:-55px;
     z-index: 3;
-    height: 100px;
+    height: 95px;
     width: 250px;
 }
 
 .right .right-image2 {
-   
-    top:90%;
-    height: 100px;
-    right:-30px;
+    top:80%;
+    height: 95px;
+    right:-58px;
     width: 250px;
     z-index: 3;
 }
