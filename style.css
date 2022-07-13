@@ -6,10 +6,9 @@
 }
 
 @font-face {
-    font-family: 'Gelion Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Gelion Regular'), url('Gelion Regular.woff') format('woff');
+    font-family: 'Gelion';
+    font-weight: bold;
+    src: url('./gelion-cufonfonts-webfont/Gelion\ Regular.woff');
 }
 
 :root {
