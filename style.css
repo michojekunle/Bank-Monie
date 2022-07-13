@@ -153,7 +153,6 @@ main {
     left:-20px;
     z-index: 3;
     height: 100px;
-    filter: blur(20);
     width: 250px;
 }
 
@@ -162,7 +161,6 @@ main {
     right:-30px;
     z-index: 3;
     height: 100px;
-    filter: blur(20);
     width: 250px;
 }
 
@@ -172,5 +170,4 @@ main {
     height: 100px;
     width: 250px;
     z-index: 3;
-    filter: blur(20);
 }
