@@ -129,7 +129,6 @@ main {
 
 .right img {
     position: absolute;
-    width:100px;
 }
 
 .right .main-image {
@@ -165,9 +164,10 @@ main {
 }
 
 .right .right-image2 {
-    right:-30px;
+   
     top:90%;
     height: 100px;
+    right:-30px;
     width: 250px;
     z-index: 3;
 }
