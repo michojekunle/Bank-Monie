@@ -62,8 +62,17 @@ main {
     font-size: 1.6rem;
 }
 
-.nav-links .nav-link.login a {
+.nav-links .nav-link:nth-of-type(1) a {
     color: var(--primary-blue);
+} 
+
+.nav-links .nav-link.login a {
+    background: transparent;
+    padding: 8px 45px;
+    border: 2px solid var(--primary-blue);
+    border-radius: 8px;
+    font-size: 1.4rem;
+    margin-left: 180px;
 } 
 
 
