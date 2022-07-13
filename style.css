@@ -1,0 +1,211 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+
+@font-face {
+    font-family: myFont;
+    font-weight: bold;
+    src: url('./gelion-cufonfonts-webfont/Gelion\ Medium.woff');
+}
+
+:root {
+    --primary-blue:#009CDE;
+    --primary-deep-blue:#012169;
+    --primary-dark-black-blue:#002433;
+    --primary-green:#01E068;
+    --primary-light-green:#B8FFD8;
+    --text-color:#808080;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: myFont;
+}
+
+main {
+    background-color: rgba(229, 247, 255, 1);
+    height: 100vh;
+    min-height: auto;
+    width: 100vw;
+    padding: 0 150px;
+}
+
+.main-header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height: 12vh;
+    min-height: 80px;
+    position: relative;
+}
+
+.brand-logo img {
+    width: 150px;
+}
+
+.nav-links {
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-links .nav-link {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.nav-links .nav-link a{
+    text-decoration: none;
+    color: var(--primary-dark-black-blue);
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+.nav-links .nav-link:nth-of-type(1) a {
+    color: var(--primary-blue);
+} 
+
+.nav-links .nav-link.login a {
+    background: transparent;
+    padding: 8px 45px;
+    border: 2px solid var(--primary-blue);
+    border-radius: 8px;
+    font-size: 1.4rem;
+    margin-left: 180px;
+} 
+
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    min-height: auto;  
+}
+
+.left {
+    width:50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.left h1 {
+    font-size: 5.6rem;
+    font-weight: bolder;
+    color: var(--primary-dark-black-blue);
+}
+
+.left h1 span {
+    color: var(--primary-blue);
+}
+
+.left p {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 100;
+    margin: 30px 0;
+}
+
+.left button {
+    background-color: #009CDE;
+    padding: 10px 45px;
+    font-size: 1.6rem;
+    border-radius: 8px;
+    border: 2px solid var(--primary-blue);
+    color: #fff;
+}
+
+.right {
+    width: 45%;
+    height: 80%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.right img {
+    position: absolute;
+}
+
+.right .main-image {
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.right .elipse {
+    top: -20px;
+    left:30%;
+    width: 200px;
+    z-index: 1;
+}
+
+.right .left-image {
+    top:60%;
+    left:-40px;
+    z-index: 3;
+    height: 95px;
+    width: 250px;
+}
+
+.right .right-image1 {
+    top:20%;
+    right:-55px;
+    z-index: 3;
+    height: 95px;
+    width: 250px;
+}
+
+.right .right-image2 {
+    top:80%;
+    height: 95px;
+    right:-58px;
+    width: 250px;
+    z-index: 3;
+}
+
+.menu {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .main-content {
+        flex-direction:column;
+    }
+
+    .left {
+        text-align: center;
+        align-items: center;
+    }
+
+    .elipse {
+        display: none;
+    }
+
+    .right .right-image1 {
+        display: none;
+    }
+
+    main {
+        padding:0 30px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        display: flex;
+        right:0;
+    }
+}
