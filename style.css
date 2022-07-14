@@ -28,9 +28,10 @@ html {
 main {
     background-color: rgba(229, 247, 255, 1);
     height: 100vh;
-    min-height: auto;
+    min-height: fit-content;
     width: 100vw;
     padding: 0 150px;
+    position: relative;
 }
 
 .main-header {
@@ -40,7 +41,7 @@ main {
     width:100%;
     height: 12vh;
     min-height: 80px;
-    position: relative;
+   
 }
 
 .brand-logo img {
@@ -75,7 +76,7 @@ main {
     border: 2px solid var(--primary-blue);
     border-radius: 8px;
     font-size: 1.4rem;
-    margin-left: 180px;
+    margin-left: 15vw;
 } 
 
 
@@ -109,7 +110,7 @@ main {
     color: var(--text-color);
     font-size: 1.6rem;
     font-weight: 100;
-    margin: 30px 0;
+    margin: 30px 0; 
 }
 
 .left button {
@@ -135,6 +136,8 @@ main {
 
 .right .main-image {
     width: 100%;
+    max-width:700px;
+    height:  450px;
     left: 0;
     right: 0;
     top: 0;
@@ -177,22 +180,77 @@ main {
     display: none;
 }
 
-@media screen and (max-width:768px) {
-    .main-content {
-        flex-direction:column;
+@media screen and (max-width:1024px) {
+    .nav-links .nav-link.login a {
+        margin-left: 10vw;
     }
 
-    .left {
-        text-align: center;
-        align-items: center;
+    .left h1 {
+        font-size: 4.2rem;
+    }
+
+    main {
+        padding: 0 80px;
     }
 
     .elipse {
         display: none;
     }
 
+    .right .left-image {
+        top: 50%;
+        left: -20px;
+        width: 200px;
+        height: 75px;
+    }
+
+    
     .right .right-image1 {
         display: none;
+    }
+
+    .right .right-image2 {
+        top: 80%;
+        right: -40px;
+        width: 200px;
+        height: 75px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .main-content {
+        flex-direction:column;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .left {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    
+
+    .right .right-image1 {
+        display: none;
+    }
+
+    .right .left-image {
+        display:none;
+    }
+
+    .right .right-image1 {
+        top: 20%;
+        right: -40px;
+        width: 200px;
+        height: 75px;
+    }
+
+    .right {
+        width: 100%;
+        margin-top: 20px;
     }
 
     main {
@@ -207,5 +265,27 @@ main {
         position: absolute;
         display: flex;
         right:0;
+    }
+
+    .left button {
+        padding: 10px 45px;
+        font-size: 1.3rem;
+        border-radius: 8px;
+        border: 2px solid var(--primary-blue);
+        color: #fff;
+    }
+
+    .left h1 {
+        font-size: 3.5rem;
+        margin-top: 30px;
+    }
+    
+    .right .main-image {
+        max-width: 500px;
+        height: 250px;
+    }
+
+    .left p {
+        font-size: 1.3rem;
     }
 }
