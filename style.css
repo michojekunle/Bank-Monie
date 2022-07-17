@@ -46,6 +46,7 @@ main {
 
 .brand-logo img {
     width: 150px;
+    z-index: 9;
 }
 
 .nav-links {
@@ -196,26 +197,10 @@ main {
     .elipse {
         display: none;
     }
-
-    .right .left-image {
-        top: 50%;
-        left: -20px;
-        width: 200px;
-        height: 75px;
-    }
-
     
-    .right .right-image1 {
+    .right .left-image, .right .right-image1,  .right .right-image2  {
         display: none;
     }
-
-    .right .right-image2 {
-        top: 80%;
-        right: -40px;
-        width: 200px;
-        height: 75px;
-    }
-
 }
 
 @media screen and (max-width:768px) {
@@ -265,6 +250,33 @@ main {
         position: absolute;
         display: flex;
         right:0;
+        z-index: 8;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 100%;
+        top: 0;
+        z-index: 8;
+        background-color: #fff;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        transition: all .4s ease-in-out;
+    }
+
+    .nav-link {
+        margin: 20px 0;
+    }
+
+    .nav-links.show {
+        right: 0;
+    }
+
+    .nav-link.login a, .nav-link.login {
+        margin-left: 0;
     }
 
     .left button {
